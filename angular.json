@@ -28,7 +28,27 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "bundleName": "prime-flex",
+                "inject": true,
+                "input": "node_modules/primeflex/primeflex.css"
+              },
+              {
+                "bundleName": "prime-icons",
+                "inject": true,
+                "input": "node_modules/primeicons/primeicons.css"
+              },
+              {
+                "bundleName": "prime-ng",
+                "inject": true,
+                "input": "node_modules/primeng/resources/primeng.min.css"
+              },
+              {
+                "bundleName": "prime-ng-theme",
+                "inject": true,
+                "input": "node_modules/primeng/resources/themes/lara-light-indigo/theme.css"
+              }
             ],
             "scripts": []
           },
@@ -103,5 +123,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "8b372c84-1ee3-44f3-bf9a-7583c7929a5a"
   }
 }
